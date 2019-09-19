@@ -8,7 +8,7 @@
 */
 int main(void)
 {
-	int n;
+	int n = 15;
 	int lnum = n % 10;
 
 	srand(time(0));
