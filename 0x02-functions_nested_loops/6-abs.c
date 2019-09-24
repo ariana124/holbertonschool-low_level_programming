@@ -3,12 +3,12 @@
 /**
  * _abs - computes absolute value of an integer
  * @a: any integer
- * Return: 0 for success
+ * Return: a for absolute integer
  */
 int _abs(int a)
 {
 	if (a < 0)
-		a = -a;
+		return (a = -a);
 	else
-		return (0);
+		return (a);
 }
