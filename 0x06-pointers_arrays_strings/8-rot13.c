@@ -8,15 +8,18 @@
 char *rot13(char *s)
 {
 	int a, b = 0;
-	char eng[] = "abcdefghijklmABCDEFGHIJKLM";
-	char rot[] = "nopqrstuvwxyzNOPQRSTUVWXYZ";
+	char eng[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	while (s[b] != '\0')
 	{
-		for (a = 0; a <= 26; a++)
+		for (a = 0; a <= 52; a++)
 		{
 			if (s[b] == eng[a])
+			{
 				s[b] = rot[a];
+				break;
+			}
 		}
 		b++;
 	}
