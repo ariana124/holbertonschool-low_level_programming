@@ -30,8 +30,8 @@ char *str_concat(char *s1, char *s2)
 	{
 		new[i] = s2[j];
 		i++;
+		new[i] = '\0';
 	}
-	new[i] = '\0';
 
 	return (new);
 }
