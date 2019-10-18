@@ -19,6 +19,26 @@ int countword(char *s)
 	return (count);
 }
 
+#include "holberton.h"
+#include <stdlib.h>
+
+/**
+ * free_2d - function that frees a 2 dimensional grid
+ * @grid: double pointer integer
+ * @height: integer
+ * Return: void
+ */
+void free_2d(char **grid, int height)
+{
+	int i;
+
+	for (i = 0; i < height; i++)
+	{
+		if (grid[i] != NULL)
+			free(grid[i]);
+	}
+	free(grid);
+}
 
 /**
  * strtow - function that splits a string into words
@@ -51,14 +71,18 @@ char **strtow(char *str)
 				;
 			ar[wordnum] = malloc((j - i + 1) * sizeof(char));
 
-				if (ar[wordnum] == NULL)
-					return (NULL);
-				for (w = 0; str[i] && str[i] != ' '; i++, w++)
-					ar[wordnum][w] = str[i];
+			if (ar[wordnum] == NULL)
+			{
+				free_2d(ar, wordnum);
+				return (NULL);
+			}
 
-				ar[wordnum][w] = '\0';
-				wordnum++;
+			for (w = 0; str[i] && str[i] != ' '; i++, w++)
+				ar[wordnum][w] = str[i];
+			ar[wordnum][w] = '\0';
+			wordnum++;
 		}
 	}
+	ar[wordnum] = NULL;
 	return (ar);
 }
