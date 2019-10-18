@@ -60,6 +60,5 @@ char **strtow(char *str)
 				wordnum++;
 		}
 	}
-	ar[wordnum] = NULL;
 	return (ar);
 }
