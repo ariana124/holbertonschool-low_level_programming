@@ -24,7 +24,6 @@ char *cap_string(char *cap)
 	return (cap);
 }
 
-#include "holberton.h"
 
 /**
  * capitalize - capitalize lower case letters
