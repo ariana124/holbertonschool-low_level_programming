@@ -16,17 +16,26 @@ dog_t *new_dog(char *name, float age, char *owner)
 	doggo = malloc(sizeof(dog_t)); /* struct dog */
 
 	if (doggo == NULL)
+	{
+		free(doggo);
 		return (NULL);
+	}
 
 	dname = malloc((_strlen(name) + 1) * sizeof(char));
 
 	if (dname == NULL)
+	{
+		free(dname);
 		return (NULL);
+	}
 
 	downer = malloc((_strlen(owner) + 1) * sizeof(char));
 
 	if (downer == NULL)
+	{
+		free(downer);
 		return (NULL);
+	}
 
 	_strcpy(dname, name);
 	_strcpy(downer, owner);
