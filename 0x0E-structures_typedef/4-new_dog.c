@@ -18,12 +18,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (doggo == NULL)
 		return (NULL);
 
-	dname = malloc(_strlen(name + 1) * sizeof(char));
+	dname = malloc((_strlen(name) + 1) * sizeof(char));
 
 	if (dname == NULL)
 		return (NULL);
 
-	downer = malloc(_strlen(owner + 1) * sizeof(char));
+	downer = malloc((_strlen(owner) + 1) * sizeof(char));
 
 	if (downer == NULL)
 		return (NULL);
