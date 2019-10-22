@@ -11,6 +11,9 @@ char *cap_string(char *cap)
 	char sep[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')',
 		      '{', '}'};
 
+	if (cap[0] >= 'a' && cap[0] <= 'z')
+		cap[0] = capitalize(cap[0]);
+
 	for (i = 0; cap[i] != '\0'; i++)
 	{
 		for (j = 0; j < 13; j++)
