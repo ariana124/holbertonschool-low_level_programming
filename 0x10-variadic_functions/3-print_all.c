@@ -11,10 +11,10 @@ void print_all(const char * const format, ...)
 	int i = 0;
 	char *string = "(nil)";
 
-	va_start(ap, format);
-
 	while (format == NULL)
 		return;
+
+	va_start(ap, format);
 
 	while (format[i] != '\0')
 	{
