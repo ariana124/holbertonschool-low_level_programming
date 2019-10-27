@@ -31,6 +31,9 @@ void print_all(const char * const format, ...)
 				string = va_arg(ap, char *);
 			printf("%s", string);
 			break;
+		default:
+			i++;
+			continue;
 		}
 		if ((format[i] == 'c' || format[i] == 'i' || format[i] == 'f' ||
 		    format[i] == 's') && format[i + 1])
