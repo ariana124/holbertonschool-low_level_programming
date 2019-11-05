@@ -11,11 +11,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	listint_t *temp = head;
 	unsigned int i;
 
-	if (temp == NULL)
+	if (temp == NULL) /* checks if the head is empty */
 		return (NULL);
 
 	for (i = 0; i < index; i++)
+	{
 		temp = temp->next;
+		if (temp == NULL) /* checks every time the pointer moves */
+			return (NULL);
+	}
 
 	return (temp);
 }
