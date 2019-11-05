@@ -13,8 +13,8 @@ int pop_listint(listint_t **head)
 	if (temp == NULL || *head == NULL)
 		return (0);
 
-	(*head) = temp->next; /* changes head */
 	data = (*head)->n;
+	(*head) = temp->next; /* changes head */
 	free(temp); /* frees old head */
 
 	return (data);
