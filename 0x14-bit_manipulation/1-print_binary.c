@@ -15,15 +15,18 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 	}
 
-	for (i = 31; i >= 0; i--)
+	else
 	{
-		binary = n >> i;
-		if (binary & 1)
+		for (i = 31; i >= 0; i--)
 		{
-			flag = 1;
-			_putchar('1');
+			binary = n >> i;
+			if (binary & 1)
+			{
+				flag = 1;
+				_putchar('1');
+			}
+			else if (flag == 1)
+				_putchar('0');
 		}
-		else if (flag == 1)
-			_putchar('0');
 	}
 }
