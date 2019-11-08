@@ -8,14 +8,14 @@
 void print_binary(unsigned long int n)
 {
 	int i, flag = 0;
-	unsigned int binary;
+	unsigned long int binary;
 
 	if (n == 0)
 	{
 		_putchar('0');
 	}
 
-	for (i = 31; i >= 0; i--)
+	for (i = 63; i >= 0; i--)
 	{
 		binary = n >> i;
 		if (binary & 1)
@@ -23,7 +23,7 @@ void print_binary(unsigned long int n)
 			flag = 1;
 			_putchar('1');
 		}
-		else if (flag == 1)
+		else if (flag)
 			_putchar('0');
 	}
 }
