@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	count = read(file, buffer, letters);
 
-	write(1, buffer, letters); /* 1 is for standard output */
+	write(1, buffer, count); /* 1 is for standard output */
 
 	close(file);
 
