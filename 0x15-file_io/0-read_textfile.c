@@ -9,25 +9,25 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, count;
+	int file, count;
 	char *buffer;
 
 	if (filename == NULL)
 		return (0);
 
-	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	file = open(filename, O_RDONLY);
+	if (file == -1)
 		return (0);
 
 	buffer = malloc(letters * sizeof(char));
 	if (buffer == NULL)
 		return (0);
 
-	count = read(fd, buffer, letters);
+	count = read(file, buffer, letters);
 
 	write(1, buffer, letters); /* 1 is for standard output */
 
-	close(fd);
+	close(file);
 
 	free(buffer);
 
