@@ -12,23 +12,23 @@ int main(int argc, char *argv[])
 	char buffer[1024];
 
 	if (argc != 3)
-		error("Usage: cp %s %s\n", "", 97);
+		error("Usage: cp file_from file_to", "", 97);
 
 	f1 = open(argv[1], O_RDONLY);
 	if (f1 == -1)
-		error("Error: Can't read from file %s\n", argv[1], 98);
+		error("Error: Can't read from file", argv[1], 98);
 
 	f2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (f2 == -1)
-		error("Error: Can't write to %s\n", argv[2], 99);
+		error("Error: Can't write to", argv[2], 99);
 
 	do {
 		rc = read(f1, buffer, 1024);
 		if (rc == -1)
-			error("Error: Can't read from file %s\n", argv[1], 98);
+			error("Error: Can't read from file", argv[1], 98);
 		wc = write(f2, buffer, rc);
 		if (wc == -1 || wc != rc)
-			error("Error: Can't write to %s\n", argv[2], 99);
+			error("Error: Can't write to", argv[2], 99);
 	} while (rc == 1024);
 
 	c1 = close(f1);
