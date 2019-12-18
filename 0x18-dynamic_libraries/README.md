@@ -1,22 +1,22 @@
-##Dynamic libraries
+## Dynamic libraries
 
 
-###General
+### General
 
 - What is a dynamic library, how does it work, how to create one, and how to use it
 - What is the environment variable $LD_LIBRARY_PATH and how to use it
 - What are the differences between static and shared libraries
 - Basic usage nm, ldd, ldconfig
 
-###Requiremnents
+### Requiremnents
 
-####Bash Scripts
+#### Bash Scripts
 - Allowed editors: `vi`, `vim`, `emacs`
 - All scripts were tested on Ubuntu 14.04 LTS
 - All files must be executable
 - The first line of all your files should be exactly `#!/bin/bash`
 
-####C
+#### C
 - Allowed editors: `vi`, `vim`, `emacs`
 - All files were compiled on Ubuntu 14.04 LTS
 - Code follows the [Betty](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) [Style](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
@@ -24,7 +24,7 @@
 - Not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
 - Prototypes of all your functions should be included in your header file called `holberton.h`
 
-###Tasks
+### Tasks
 
 0. Create the dynamic library `libholberton.so` containing all the functions listed below:
 ```
