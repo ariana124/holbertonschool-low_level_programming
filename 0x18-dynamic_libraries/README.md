@@ -19,6 +19,7 @@
 #### C
 - Allowed editors: `vi`, `vim`, `emacs`
 - All files were compiled on Ubuntu 14.04 LTS
+- All programs and functions were compiled with `gcc 4.8.4` using the flags `-Wall` `-Werror` `-Wextra` and `-pedantic`
 - Code follows the [Betty](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) [Style](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 - No more than 5 functions per file
 - Not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
