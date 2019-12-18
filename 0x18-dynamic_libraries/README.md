@@ -58,4 +58,5 @@ char *_strstr(char *haystack, char *needle);
     - How to use them (Linux only)
     - What are the differences between static and dynamic libraries
     - What are the advantages and drawbacks of each of them
-   > [And here's the blog post](https://medium.com/@arianabibiano/dynamic-v-static-libraries-e1a877818298)
+    
+> [And here's the blog post](https://medium.com/@arianabibiano/dynamic-v-static-libraries-e1a877818298)
