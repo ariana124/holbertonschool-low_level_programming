@@ -1,4 +1,4 @@
-# Dynamic libraries
+# Dynamic Libraries
 
 
 ### General
@@ -7,6 +7,8 @@
 - What is the environment variable `$LD_LIBRARY_PATH` and how to use it
 - What are the differences between static and shared libraries
 - Basic usage `nm`, `ldd`, `ldconfig`
+
+*****************
 
 ### Requiremnents
 
@@ -24,6 +26,8 @@
 - No more than 5 functions per file
 - Not allowed to use the standard library. Any use of functions like `printf`, `puts`, etc… is forbidden
 - Prototypes of all your functions should be included in your header file called `holberton.h`
+
+*****************
 
 ### Tasks
 
