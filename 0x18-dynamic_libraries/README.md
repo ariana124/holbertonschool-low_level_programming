@@ -10,7 +10,7 @@
 
 *****************
 
-### Requiremnents
+### Requirements
 
 #### Bash Scripts
 - Allowed editors: `vi`, `vim`, `emacs`
