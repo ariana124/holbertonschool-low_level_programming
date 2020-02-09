@@ -25,6 +25,6 @@
 | 0x13-more_singly_linked_lists | More singly linked lists.
 | 0x14-bit_manipulation | Bit manipulation and the usage of bitwise operators.
 | 0x15-file_io | File descriptors, and file input/output using system calls: `open`, `close`, `read`, and `write`.
-| 0x17-doubly_linked_lists |
-| 0x18-dynamic_libraries |
-|	0x1A-hash_tables |
+| 0x17-doubly_linked_lists | Doubly linked lists and how to use them.
+| 0x18-dynamic_libraries | Creating a dynamic library and the usage of `nm`, `ldd`, and `ldconfig`.
+|	0x1A-hash_tables | Hash function and how to create a hash table.
