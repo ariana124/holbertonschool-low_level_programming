@@ -7,8 +7,6 @@ RM = rm
 all: $(OBJ)
 	$(CC) $(SRC) -o $(NAME)
 
-.PHONY: clean
-
 clean:
 	$(RM) -f *~ $(NAME)
 
